@@ -1,0 +1,296 @@
+/* ================================= 
+  Toggle
+==================================== */
+
+.toggle {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: url(img/menu-01.png);
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: center;
+  cursor: pointer;
+  margin-right: 25px;
+}
+
+.toggle.active {
+  background: url(img/close-01.png);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: center;
+  cursor: pointer;
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu ul {
+  position: relative;
+  list-style: none;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  font-size: 24px;
+  color: #111;
+}
+
+.menu ul a:hover {
+  color: var(--overlay-color);
+}
+
+/* ================================= 
+  Nav
+==================================== */
+
+
+.toggle {
+  float: right;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #000;
+}
+
+.navbar {
+    padding: 2rem;
+}
+
+.navbar-brand {
+    font-family: aktiv-grotesk, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+}
+
+
+/* Social Media Icons */
+
+.social {
+    margin-top: 10px;
+}
+
+.main {
+    padding: 2.5rem;
+}
+
+/* ================================= 
+  Image Effects
+==================================== */
+
+.contain {
+    position: relative;
+  }
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .contain:hover .image {
+    opacity: 0.3;
+  }
+  
+  .contain:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    font-family: itc-avant-garde-gothic-pro, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;  
+    color: black;
+    padding: 5px;
+  }
+
+/* ================================= 
+  Nav color change
+==================================== */ 
+
+#royalmailnav {
+    color: #fff;
+}  
+
+/* ================================= 
+  Work Example Hero Images
+==================================== */  
+
+.hero-royalmail {
+    margin-top: -130px;
+    width: 100%;
+}
+
+/* ================================= 
+  Columns for Work Pages
+==================================== */ 
+
+#content {
+    padding-top: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.headerOne {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.workbreakdown {
+    padding-top: 40px;
+    padding-bottom: 150px;
+}
+
+/* ================================= 
+  Bottom Nav
+==================================== */
+
+.bottomNav {
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+    font-weight: 700;
+    color: #000;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.before {
+  padding-left: 20px;
+}
+
+.next {
+    padding-right: 20px;
+}
+
+/* a:hover {
+    color: #444444;
+    opacity: 0.6;
+    transition: 0.5s;
+} */
+
+/* ================================= 
+  Footer
+==================================== */
+
+
+.footer-container {
+    max-width: 200px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.email {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* .email:hover {
+    color: #fffc52;
+  } */
+
+/* ================================= 
+  Media quieries
+==================================== */
+
+@media (min-width: 991px) {
+
+/* ================================= 
+  Header
+==================================== */
+
+.navbar-brand {
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.navbar-brand:hover {
+  letter-spacing: 12px;
+}
+
+.navbar-collapse {
+    width: 16rem;
+    line-height: .5;
+}
+
+.social {
+    margin-left: 10px;
+    line-height: 10;
+}
+
+.navbar-nav li a {
+  transform: scale(1);
+  transition: 0.5s;
+}
+
+.navbar-nav li a:hover {
+  transform: scale(1) translateY(-15px);
+}
+
+.footer-container a {
+  transform: scale(1);
+  transition: 0.5s;
+}
+
+.footer-container a:hover {
+  transform: scale(1) translateY(-15px);
+}
+
+
+
+   
+div#navbarNav.navbar-collapse.collapse {
+    float: right;
+}
+
+/* .nav-item a:hover {
+    border-bottom: 3px solid #000;
+} */
+
+#navbarwhite a:hover{
+    border-bottom: 3px solid #fff;
+}
+
+.social {
+    display: flex;
+}
+
+li.nav-item {
+    line-height: 3;
+}
+    
+}
