@@ -13,26 +13,28 @@ h2 {
     font-size: 30px;
     padding-right: 50px;
     margin-left: 10px;
+    padding-bottom: 15px;
 }
+
 
 nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding-top: 30px;
     align-items: center;
     min-height: 8vh;
     font-family: aktiv-grotesk, sans-serif;
 }
 
-.logo {
-    font-size: 20px;
-}
-
 .nav-links {
     display: flex;
-    justify-content:space-around;
-    width: 30%;
+    justify-content: space-between;
 }
+
+.navbar {
+    padding-top: 40px;
+}
+
 
 .nav-links li {
     list-style: none;
@@ -41,9 +43,13 @@ nav {
 .nav-links a {
     text-decoration: none;
     letter-spacing: 3px;
-    font-weight: bold;
-    font-size: 20px;
+    padding-left: 30px;
+    font-size: 15px;
     color: #000;
+}
+
+.social {
+    line-height: 1;
 }
 
 .burger {
@@ -54,6 +60,7 @@ nav {
 .burger div {
     width: 25px;
     height: 3px;
+    line-height: 3px;
     background-color: #000;
     margin: 5px;
     transition: all 0.3s ease;
@@ -108,7 +115,7 @@ nav {
   Media quieries
 ==================================== */
 
-@media screen and (max-width:1024px) {
+/* @media screen and (max-width:1024px) {
 
     .nav-links {
         width: 50%;
@@ -116,16 +123,17 @@ nav {
 
     h2 {
         margin-bottom: 10px;
-    }
+    } */
 
 @media screen and (max-width:768px) {
 
     h2 {
-        margin-bottom: 10px;
+        margin-bottom: -10px;
     }
 
     .nav-links {
         width: 60%;
+        font-size: 10px;
     }
 
     body {
@@ -135,25 +143,41 @@ nav {
     .nav-links {
         position: absolute;
         right: 0px;
-        height: 100vh;
+        height: 50vh;
+        margin-top: 20px;
         top: 8vh;
         background-color: #fff;
+        padding-left: 0;
         z-index: 1;
         opacity: 97%;
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding-bottom: 50px;
         width: 100%;
         transform: translateX(100%);
         transition: transform 0.75s ease-in;
+    }
+
+    .nav-active {
+        height: 100vh;
     }
 
     .nav-links li {
         opacity: 0;
     }
 
+    .nav-links li:first-child {
+        padding-top: 80px;
+    }
+
+    .nav-links a {
+        font-size: 30px;
+    }
+
     .burger {
         display: block;
+        margin-right: 10px;
     }
 }
 
