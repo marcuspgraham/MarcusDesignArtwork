@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+.container-fluid {
+    padding-left: 20px;
+    padding-right: 20px
+}
+
 /* ================================= 
   Nav
 ==================================== */
@@ -14,8 +19,22 @@ h2 {
     padding-right: 50px;
     margin-left: 10px;
     padding-bottom: 15px;
+    text-decoration: none;
 }
 
+h2 a:hover {
+    color: grey;
+    transition: 0.5s;
+} 
+
+.nav-links li {
+    transform: scale(1);
+    transition: 0.5s;
+}
+  
+.nav-links li:hover {
+    transform: scale(1) translateY(-15px);
+}
 
 nav {
     display: flex;
@@ -51,6 +70,7 @@ nav {
 .social {
     line-height: 1;
 }
+
 
 .burger {
     display: none;
@@ -112,24 +132,110 @@ nav {
   }
 
 /* ================================= 
+  Work Example Hero Images
+==================================== */  
+
+.hero-royalmail {
+    margin-top: -130px;
+    width: 100%;
+}  
+
+.container {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.headerOne {
+
+}
+
+.headerOne:hover {
+
+}
+
+/* ================================= 
+  Footer
+==================================== */
+
+
+.footer-container {
+    max-width: 200px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.email {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-container a {
+    transform: scale(1);
+    transition: 0.5s;
+}
+  
+.footer-container a:hover {
+    transform: scale(1) translateY(-15px);
+}
+
+p a:hover {
+    color: grey;
+    transition: 0.25s;
+}
+
+/* ================================= 
+  Bottom Nav
+==================================== */
+
+.bottomNav {
+    display: flex;
+    justify-content: space-around;
+    font-size: 30px;
+    font-weight: 700;
+    color: #000;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.before {
+  padding-left: 20px;
+}
+
+.next {
+    padding-right: 20px;
+}
+
+.rightpag a:hover,
+.leftpag a:hover {
+    color: grey;
+    transition: .25s ease;
+}
+
+
+/* ================================= 
   Media quieries
 ==================================== */
 
-/* @media screen and (max-width:1024px) {
-
-    .nav-links {
-        width: 50%;
-    }
-
-    h2 {
-        margin-bottom: 10px;
-    } */
 
 @media screen and (max-width:768px) {
 
     h2 {
         margin-bottom: -10px;
     }
+
+    /* .main {
+        display: none;
+    } */
 
     .nav-links {
         width: 60%;
@@ -140,16 +246,20 @@ nav {
         overflow-x: hidden;
     }
 
+    .navbar {
+        background-color: #fff;
+    }
+
     .nav-links {
         position: absolute;
         right: 0px;
-        height: 50vh;
-        margin-top: 20px;
+        height: 70vh;
+        margin-top: 10px;
         top: 8vh;
         background-color: #fff;
         padding-left: 0;
         z-index: 1;
-        opacity: 97%;
+        opacity: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -159,8 +269,26 @@ nav {
         transition: transform 0.75s ease-in;
     }
 
-    .nav-active {
-        height: 100vh;
+    svg {
+        transform: scale(2);
+    }
+
+    .social2 {
+        display: none;
+    }
+
+    .container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .headerOne {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .bottomNav {
+        transform: scale(.5);
     }
 
     .nav-links li {
@@ -175,9 +303,13 @@ nav {
         font-size: 30px;
     }
 
+    .hero-royalmail {
+        margin-top: 0;
+    }
+
     .burger {
         display: block;
-        margin-right: 10px;
+        /* margin-right: 10px; */
     }
 }
 
