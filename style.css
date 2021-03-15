@@ -67,6 +67,7 @@ nav {
     color: #000;
 }
 
+
 .social {
     line-height: 1;
 }
@@ -125,14 +126,14 @@ nav {
   .text {
     font-family: itc-avant-garde-gothic-pro, sans-serif;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 30px;  
     color: black;
     padding: 5px;
   }
 
 /* ================================= 
-  Work Example Hero Images
+  Work Example Hero Images - Royal Mail
 ==================================== */  
 
 .hero-royalmail {
@@ -146,11 +147,21 @@ nav {
 }
 
 .headerOne {
-
+    margin-left: 0;
+    font-size: 50px;
 }
 
 .headerOne:hover {
 
+}
+
+
+/* ================================= 
+  Contact Page
+==================================== */  
+
+.hero-contact {
+    width: 100%;
 }
 
 /* ================================= 
